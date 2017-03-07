@@ -1,0 +1,22 @@
+E:\blahlicus\Documents\Visual Studio 2015\Projects\Image-Meister\Simple-Image-Meister\Simple-Image-Meister\Simple-Image-Meister\bin\Debug\Simple-Image-Meister.exe.config
+E:\blahlicus\Documents\Visual Studio 2015\Projects\Image-Meister\Simple-Image-Meister\Simple-Image-Meister\Simple-Image-Meister\bin\Debug\Simple-Image-Meister.exe
+E:\blahlicus\Documents\Visual Studio 2015\Projects\Image-Meister\Simple-Image-Meister\Simple-Image-Meister\Simple-Image-Meister\bin\Debug\Simple-Image-Meister.pdb
+E:\blahlicus\Documents\Visual Studio 2015\Projects\Image-Meister\Simple-Image-Meister\Simple-Image-Meister\Simple-Image-Meister\obj\Debug\Simple_Image_Meister.Properties.Resources.resources
+E:\blahlicus\Documents\Visual Studio 2015\Projects\Image-Meister\Simple-Image-Meister\Simple-Image-Meister\Simple-Image-Meister\obj\Debug\Simple-Image-Meister.csproj.GenerateResource.Cache
+E:\blahlicus\Documents\Visual Studio 2015\Projects\Image-Meister\Simple-Image-Meister\Simple-Image-Meister\Simple-Image-Meister\obj\Debug\Simple-Image-Meister.exe
+E:\blahlicus\Documents\Visual Studio 2015\Projects\Image-Meister\Simple-Image-Meister\Simple-Image-Meister\Simple-Image-Meister\obj\Debug\Simple-Image-Meister.pdb
+E:\blahlicus\Documents\Visual Studio 2015\Projects\Image-Meister\Simple-Image-Meister\Simple-Image-Meister\Simple-Image-Meister\obj\Debug\Simple-Image-Meister.csprojResolveAssemblyReference.cache
+E:\blahlicus\Documents\Visual Studio 2015\Projects\Image-Meister\Simple-Image-Meister\Simple-Image-Meister\Simple-Image-Meister\obj\Debug\Simple_Image_Meister.FmMain.resources
+E:\blahlicus\Documents\Visual Studio 2015\Projects\Image-Meister\Simple-Image-Meister\Simple-Image-Meister\Simple-Image-Meister\obj\Debug\Interop.SHDocVw.dll
+E:\blahlicus\Documents\Visual Studio 2015\Projects\Image-Meister\Simple-Image-Meister\Simple-Image-Meister\Simple-Image-Meister\obj\Debug\Simple-Image-Meister.csproj.ResolveComReference.cache
+E:\blahlicus\Documents\GitHub\image-meister\Simple-Image-Meister\Simple-Image-Meister\Simple-Image-Meister\bin\Debug\Simple-Image-Meister.exe.config
+E:\blahlicus\Documents\GitHub\image-meister\Simple-Image-Meister\Simple-Image-Meister\Simple-Image-Meister\bin\Debug\Simple-Image-Meister.exe
+E:\blahlicus\Documents\GitHub\image-meister\Simple-Image-Meister\Simple-Image-Meister\Simple-Image-Meister\bin\Debug\Simple-Image-Meister.pdb
+E:\blahlicus\Documents\GitHub\image-meister\Simple-Image-Meister\Simple-Image-Meister\Simple-Image-Meister\obj\Debug\Simple-Image-Meister.csprojResolveAssemblyReference.cache
+E:\blahlicus\Documents\GitHub\image-meister\Simple-Image-Meister\Simple-Image-Meister\Simple-Image-Meister\obj\Debug\Interop.SHDocVw.dll
+E:\blahlicus\Documents\GitHub\image-meister\Simple-Image-Meister\Simple-Image-Meister\Simple-Image-Meister\obj\Debug\Simple-Image-Meister.csproj.ResolveComReference.cache
+E:\blahlicus\Documents\GitHub\image-meister\Simple-Image-Meister\Simple-Image-Meister\Simple-Image-Meister\obj\Debug\Simple_Image_Meister.FmMain.resources
+E:\blahlicus\Documents\GitHub\image-meister\Simple-Image-Meister\Simple-Image-Meister\Simple-Image-Meister\obj\Debug\Simple_Image_Meister.Properties.Resources.resources
+E:\blahlicus\Documents\GitHub\image-meister\Simple-Image-Meister\Simple-Image-Meister\Simple-Image-Meister\obj\Debug\Simple-Image-Meister.csproj.GenerateResource.Cache
+E:\blahlicus\Documents\GitHub\image-meister\Simple-Image-Meister\Simple-Image-Meister\Simple-Image-Meister\obj\Debug\Simple-Image-Meister.exe
+E:\blahlicus\Documents\GitHub\image-meister\Simple-Image-Meister\Simple-Image-Meister\Simple-Image-Meister\obj\Debug\Simple-Image-Meister.pdb
