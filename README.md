@@ -1,6 +1,6 @@
 # Image Meister
 ## Introduction
-This is a simple Winfows only image viewer written in C# winforms designed specifically for reading consecutive image files or manga, it abuses the web browser control in winforms and uses its built-in async functionality to display large amounts of images efficiently.
+This is a simple Windows only image viewer written in C# winforms designed specifically for reading consecutive image files or manga, it abuses the web browser control in winforms and uses its built-in async functionality to display large amounts of images efficiently.
 
 ## Usage
 Download the executable from [here](https://github.com/blahlicus/image-meister/raw/master/Simple-Image-Meister/Simple-Image-Meister/Simple-Image-Meister/bin/Release/Simple-Image-Meister.exe), then add a file association to the executable by right-clicking an image and selecting "open with -> another application -> browse for an application" then select the downloaded .exe.
