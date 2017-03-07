@@ -92,17 +92,28 @@ namespace Simple_Image_Meister
 
         private void WBMain_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
-            int zoomlevel;
-            if (Convert.ToDouble(maxWidth)/screenWidth > Convert.ToDouble(maxHeight)/screenHeight)
+            int zoomlevel = 100;
+            if (maxWidth > screenWidth * 0.9)
             {
 
-                zoomlevel = Convert.ToInt32(((100 * screenWidth) / maxWidth) * 0.8);
+                var tz = Convert.ToInt32(((100 * screenWidth) / maxWidth) * 0.9);
+                if (zoomlevel > tz)
+                {
+                    zoomlevel = tz;
+                }
             }
-            else
+
+            if (maxHeight > screenHeight * 0.9)
             {
-                zoomlevel = Convert.ToInt32(((100 * screenHeight) / maxHeight) * 0.8);
+                var tz = Convert.ToInt32(((100 * screenHeight) / maxHeight) * 0.8);
+                if (zoomlevel > tz)
+                {
+                    zoomlevel = tz;
+                    MessageBox.Show(zoomlevel.ToString());
+                }
 
             }
+
             this.Height = Convert.ToInt32(maxHeight * zoomlevel / 100 * 1.1);
             this.Width = Convert.ToInt32(maxWidth * zoomlevel / 100 * 1.1);
             ((SHDocVw.WebBrowser)WBMain.ActiveXInstance).ExecWB(SHDocVw.OLECMDID.OLECMDID_OPTICAL_ZOOM, SHDocVw.OLECMDEXECOPT.OLECMDEXECOPT_DONTPROMPTUSER, zoomlevel, IntPtr.Zero);
