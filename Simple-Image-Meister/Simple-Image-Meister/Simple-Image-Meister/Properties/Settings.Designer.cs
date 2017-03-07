@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Image_Meister.Properties
+namespace Simple_Image_Meister.Properties
 {
 
 

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
-namespace Image_Meister
+namespace Simple_Image_Meister
 {
     static class Program
     {
@@ -15,23 +15,25 @@ namespace Image_Meister
         [STAThread]
         static void Main(string[] args)
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
             MdSessionData.Init();
-            if (args.Length == 1)
+            if (args.Length > 0)
             {
                 string filename = args[0];
+                if (filename.Contains(@":\"))
+                {
+                    // do nothing
+                }
+                else
+                {
+                    filename = Path.GetFullPath(filename);
+                }
                 string directoryname = System.IO.Path.GetDirectoryName(filename);
                 MdSessionData.CurrentDirectory = directoryname;
                 MdSessionData.CurrentFile = filename;
-                var fileList = Directory.GetFiles(directoryname, "*.*", SearchOption.TopDirectoryOnly)
-                    .Where(s => MdConstant.FormatList.Any(e => s.EndsWith(e)));
-
-                string[] sFileList = fileList.ToArray();
-                Array.Sort(sFileList, MdUtil.CompareNatural);
-                MdSessionData.CurrentFiles = sFileList.ToList();
 
             }
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FmMain());
         }
     }

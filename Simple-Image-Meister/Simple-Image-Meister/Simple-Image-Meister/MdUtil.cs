@@ -4,7 +4,7 @@ using System.Linq;
 using System.Globalization;
 using System.Text;
 
-namespace Image_Meister
+namespace Simple_Image_Meister
 {
     public class MdUtil
     {
