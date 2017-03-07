@@ -7,7 +7,7 @@ Download the executable from [here](https://github.com/blahlicus/image-meister/r
 
 Alternatively, drag-and-drop image files directly onto the exe also works.
 
-Or you could fall it from the command line via the statement `image-meister.exe [image-path]`.
+Or you could call it from the command line via the statement `image-meister.exe [image-path]`.
 
 ## Features
 * Fast async image loading
