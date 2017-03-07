@@ -14,7 +14,9 @@ namespace Simple_Image_Meister
     public partial class FmMain : Form
     {
         int maxWidth;
+        int maxHeight;
         int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+        int screenHeight = Screen.PrimaryScreen.Bounds.Height;
         public FmMain()
         {
             InitializeComponent();
@@ -27,6 +29,7 @@ namespace Simple_Image_Meister
 
             var html = MdConstant.DOC_PREFIX;
             int tw = 0;
+            int th = 0;
             if (MdSessionData.CurrentDirectory != null && MdSessionData.CurrentDirectory != "NULL")
             {
 
@@ -39,6 +42,11 @@ namespace Simple_Image_Meister
                         {
                             tw = w;
                         }
+                        int h = ImageHelper.GetDimensions(ele).Height;
+                        if (h > th)
+                        {
+                            th = h;
+                        }
                     }
 
                     foreach (var ele in MdSessionData.CurrentFiles)
@@ -49,10 +57,12 @@ namespace Simple_Image_Meister
                 else
                 {
                     tw = ImageHelper.GetDimensions(MdSessionData.CurrentFile).Width;
+                    th = ImageHelper.GetDimensions(MdSessionData.CurrentFile).Height;
                     html = html + MdConstant.IMAGE_PREFIX + MdSessionData.CurrentFile + MdConstant.Image_MIDFIX + tw + MdConstant.IMAGE_SUFFIX;
                 }
             }
             maxWidth = tw;
+            maxHeight = th;
             html = html + MdConstant.DOC_SUFFIX;
             //MessageBox.Show(html);
             WBMain.DocumentText = html;
@@ -82,8 +92,19 @@ namespace Simple_Image_Meister
 
         private void WBMain_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
+            int zoomlevel;
+            if (Convert.ToDouble(maxWidth)/screenWidth > Convert.ToDouble(maxHeight)/screenHeight)
+            {
 
-            int zoomlevel = Convert.ToInt32(((100 * screenWidth) / maxWidth) * 0.95);
+                zoomlevel = Convert.ToInt32(((100 * screenWidth) / maxWidth) * 0.8);
+            }
+            else
+            {
+                zoomlevel = Convert.ToInt32(((100 * screenHeight) / maxHeight) * 0.8);
+
+            }
+            this.Height = Convert.ToInt32(maxHeight * zoomlevel / 100 * 1.1);
+            this.Width = Convert.ToInt32(maxWidth * zoomlevel / 100 * 1.1);
             ((SHDocVw.WebBrowser)WBMain.ActiveXInstance).ExecWB(SHDocVw.OLECMDID.OLECMDID_OPTICAL_ZOOM, SHDocVw.OLECMDEXECOPT.OLECMDEXECOPT_DONTPROMPTUSER, zoomlevel, IntPtr.Zero);
         }
     }
